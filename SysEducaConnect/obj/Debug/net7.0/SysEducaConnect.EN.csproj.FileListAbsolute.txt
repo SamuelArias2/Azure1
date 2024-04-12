@@ -1,0 +1,15 @@
+C:\Users\samue\Source\Repos\SysEducaConnect\SysEducaConnect\bin\Debug\net7.0\SysEducaConnect.EN.deps.json
+C:\Users\samue\Source\Repos\SysEducaConnect\SysEducaConnect\bin\Debug\net7.0\SysEducaConnect.EN.runtimeconfig.json
+C:\Users\samue\Source\Repos\SysEducaConnect\SysEducaConnect\bin\Debug\net7.0\SysEducaConnect.EN.dll
+C:\Users\samue\Source\Repos\SysEducaConnect\SysEducaConnect\bin\Debug\net7.0\SysEducaConnect.EN.pdb
+C:\Users\samue\Source\Repos\SysEducaConnect\SysEducaConnect\obj\Debug\net7.0\SysEducaConnect.EN.csproj.AssemblyReference.cache
+C:\Users\samue\Source\Repos\SysEducaConnect\SysEducaConnect\obj\Debug\net7.0\SysEducaConnect.EN.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samue\Source\Repos\SysEducaConnect\SysEducaConnect\obj\Debug\net7.0\SysEducaConnect.EN.AssemblyInfoInputs.cache
+C:\Users\samue\Source\Repos\SysEducaConnect\SysEducaConnect\obj\Debug\net7.0\SysEducaConnect.EN.AssemblyInfo.cs
+C:\Users\samue\Source\Repos\SysEducaConnect\SysEducaConnect\obj\Debug\net7.0\SysEducaConnect.EN.csproj.CoreCompileInputs.cache
+C:\Users\samue\Source\Repos\SysEducaConnect\SysEducaConnect\obj\Debug\net7.0\SysEducaConnect.EN.sourcelink.json
+C:\Users\samue\Source\Repos\SysEducaConnect\SysEducaConnect\obj\Debug\net7.0\SysEducaConnect.EN.dll
+C:\Users\samue\Source\Repos\SysEducaConnect\SysEducaConnect\obj\Debug\net7.0\refint\SysEducaConnect.EN.dll
+C:\Users\samue\Source\Repos\SysEducaConnect\SysEducaConnect\obj\Debug\net7.0\SysEducaConnect.EN.pdb
+C:\Users\samue\Source\Repos\SysEducaConnect\SysEducaConnect\obj\Debug\net7.0\SysEducaConnect.EN.genruntimeconfig.cache
+C:\Users\samue\Source\Repos\SysEducaConnect\SysEducaConnect\obj\Debug\net7.0\ref\SysEducaConnect.EN.dll
