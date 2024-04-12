@@ -1,0 +1,233 @@
+﻿<!--
+// v0 by Vercel.
+// https://v0.dev/t/7VDDv7L7Bxz
+-->
+<head>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .contenedor {
+            display: flex;
+            flex-wrap: nowrap;
+            min-height: 100vh;
+            min-width: 100vw;
+            background-color: #1a1c23;
+        }
+
+        .boton {
+            padding: 20px 20px auto, auto;
+            color: black;
+            background-color: white;
+            border-radius: 1rem;
+            width: 90px;
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+        }
+
+    </style>
+
+</head>
+
+@{
+    Layout = null;
+}
+
+<div class="contenedor">
+    <aside class="w-1/4 bg-[#23262f] p-6">
+        <div class="flex items-center justify-between mb-10">
+            <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+                <img class="aspect-square h-full w-full"
+                     alt="Karen Cytnarry"
+                     src="/placeholder.svg?height=40&amp;width=40" />
+            </span>
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 bg-[#00b289] text-white">
+                PRO
+            </button>
+        </div>
+        <div class="text-white mb-6">
+            <h1 class="text-2xl font-semibold">Karen Cytnarry</h1>
+            <p class="text-sm opacity-50">karendesign@gmail.com</p>
+        </div>
+        
+        <nav class="flex flex-col space-y-4 text-white">
+            <button class="inline-flex items-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 justify-start">
+                Inquiries
+            </button>
+            <button class="inline-flex items-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 justify-start">
+                Projects
+            </button>
+            <button class="inline-flex items-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 justify-start">
+                Followers
+            </button>
+            <button class="inline-flex items-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 justify-start">
+                Messages
+            </button>
+            <button class="inline-flex items-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 justify-start">
+                Budgets
+            </button>
+            <form asp-controller="Usuario" asp-action="CerrarSesion">
+            <button class="inline-flex items-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 justify-start" type="submit">
+              Cerrar sesión
+            </button>
+            </form>
+        </nav>
+        <div class="mt-10">
+            <div class="rounded-lg border text-card-foreground shadow-sm bg-[#2d3038]" data-v0-t="card">
+                <div class="p-6">
+                    <p class="text-sm text-white">Your PRO is about to over</p>
+                </div>
+                <div class="items-center p-6 flex justify-center">
+                    <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 text-white border-white">
+                        Extend License
+                    </button>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main class="flex-1 p-6">
+        <div class="flex justify-between items-center mb-6">
+            <input class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 flex-1"
+                   placeholder="Search" />
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="24"
+                 height="24"
+                 viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 stroke-linecap="round"
+                 stroke-linejoin="round"
+                 class="text-white ml-4">
+                <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+        </div>
+        <div dir="ltr"
+             class="relative overflow-hidden h-[calc(100vh-150px)]"
+             style="position: relative; --radix-scroll-area-corner-width: 0px; --radix-scroll-area-corner-height: 0px;">
+            <style>
+                [data-radix-scroll-area-viewport] {
+                    scrollbar-width: none;
+                    -ms-overflow-style: none;
+                    -webkit-overflow-scrolling: touch;
+                }
+
+                    [data-radix-scroll-area-viewport]::-webkit-scrollbar {
+                        display: none
+                    }</style>
+            <div data-radix-scroll-area-viewport=""
+                 class="h-full w-full rounded-[inherit]"
+                 style="overflow: hidden scroll;">
+                <div style="min-width: 100%; display: table;">
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center bg-[#2d3038] p-4 rounded-lg">
+                            <div>
+                                <h2 class="text-white font-semibold">Kenneth Cole</h2>
+                                <p class="text-sm text-gray-400">New York, USA</p>
+                            </div>
+                            <div class="inline-flex items-center rounded-full whitespace-nowrap border px-2.5 py-0.5 w-fit text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80">
+                                8 hours ago
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center bg-[#2d3038] p-4 rounded-lg">
+                            <div>
+                                <h2 class="text-white font-semibold">Lucy Saltamari</h2>
+                                <p class="text-sm text-gray-400">Palo Alto, USA</p>
+                            </div>
+                            <div class="inline-flex items-center rounded-full whitespace-nowrap border px-2.5 py-0.5 w-fit text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80">
+                                31 Nov, 2017
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center bg-[#2d3038] p-4 rounded-lg">
+                            <div>
+                                <h2 class="text-white font-semibold">Laura Ashley</h2>
+                                <p class="text-sm text-gray-400">Dallas, USA</p>
+                            </div>
+                            <div class="inline-flex items-center rounded-full whitespace-nowrap border px-2.5 py-0.5 w-fit text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80">
+                                25 Nov, 2017
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center bg-[#2d3038] p-4 rounded-lg">
+                            <div>
+                                <h2 class="text-white font-semibold">Billy Rosewood</h2>
+                                <p class="text-sm text-gray-400">Washington D.C., USA</p>
+                            </div>
+                            <div class="inline-flex items-center rounded-full whitespace-nowrap border px-2.5 py-0.5 w-fit text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80">
+                                22 Nov, 2017
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center bg-[#2d3038] p-4 rounded-lg">
+                            <div>
+                                <h2 class="text-white font-semibold">Bob Dellinger</h2>
+                                <p class="text-sm text-gray-400">Orlando, USA</p>
+                            </div>
+                            <div class="inline-flex items-center rounded-full whitespace-nowrap border px-2.5 py-0.5 w-fit text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80">
+                                18 Nov, 2017
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="w-1/3 bg-[#2d3038] p-6 rounded-lg">
+        <div class="flex justify-between items-center mb-6">
+            <div>
+                <h2 class="text-white font-semibold">Billy Rosewood</h2>
+                <p class="text-sm text-gray-400">Washington D.C., USA</p>
+            </div>
+            <p class="text-sm text-gray-400">Friday, 13th Mar, 2018</p>
+        </div>
+        <div class="mb-6">
+            <button class="Boton">
+                <div class="inline-flex items-center rounded-full whitespace-nowrap border px-2.5 py-0.5 w-fit text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80">
+                    Immediate
+                </div>
+            </button>
+            <button class="Boton">
+                <div class="inline-flex items-center rounded-full whitespace-nowrap border px-2.5 py-0.5 w-fit text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 ml-2">
+                    Freelance
+                </div>
+            </button>
+            <button class="Boton">
+                <div class="inline-flex items-center rounded-full whitespace-nowrap border px-2.5 py-0.5 w-fit text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 ml-2">
+                    Over $5 000
+                </div>
+            </button>
+        </div>
+        <h1 class="text-xl text-white font-semibold mb-4">Complete Redesign of Switchapp</h1>
+        <p class="text-sm text-gray-400 mb-6">
+            Hey Karen, I'm the founder &amp; CEO of Switch (switchapp.com). I'm contacting you because your background
+            looks great and highly relevant for our team in Kiev. Are you open to new opportunities right now? If so, I'd
+            like to speak to you and tell you more about us and our team.
+        </p>
+        <div class="flex items-center mb-4">
+            <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+                <img class="aspect-square h-full w-full"
+                     alt="Karen Cytnarry"
+                     src="/placeholder.svg?height=40&amp;width=40" />
+            </span>
+            <div class="ml-4">
+                <h2 class="text-white font-semibold">Karen Cytnarry</h2>
+                <p class="text-sm text-gray-400">New York, USA</p>
+            </div>
+            <div class="inline-flex items-center rounded-full whitespace-nowrap border px-2.5 py-0.5 w-fit text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 ml-auto">
+                UNREAD
+            </div>
+        </div>
+        <p class="text-sm text-gray-400 mb-6">
+            Hello Billy. I am currently working on the project, but it's ending this week, so I guess I could take an
+            effort in doing your app. Please send me the brief to study the case. Thanks.
+        </p>
+        <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full">
+            Reply Now
+        </button>
+    </section>
+</div>

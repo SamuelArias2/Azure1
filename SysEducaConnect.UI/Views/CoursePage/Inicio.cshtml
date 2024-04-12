@@ -1,0 +1,368 @@
+﻿
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/CoursePage.css">
+    <link rel="icon" href="/Imagenes/Iconos/elearning.ico" type="image/x-icon">
+
+</head>
+
+@{
+     Layout = null;
+}
+<!--Primer parte-->
+<div class="container">
+    <header class="flex justify-between items-center py-4 encabezado">
+        <div class="flex items-center space-x-6">
+            <div class="shine">EDUCACONNECT</div>
+            <nav class="flex space-x-4">
+                <a href="#" class="text-sm font-medium text-gray-700 hover:text-white">
+                    Products
+                </a>e
+                <a href="#" class="text-sm font-medium text-gray-700 hover:text-white">
+                    Templates
+                </a>
+                <a href="#" class="text-sm font-medium text-gray-700 hover:text-white">
+                    Resources
+                </a>
+            </nav>
+        </div>
+        <div class="flex items-center space-x-4">
+            <a href="@Url.Action("Login", "Usuario")" target="_blank" class="text-sm font-medium text-gray-700 hover:text-white">Login</a>
+            <a href="@Url.Action("Register", "SignUp")" target="_blank"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 bg-white text-black px-4 py-2 rounded-md">
+                Get Started
+            </a>
+        </div>
+    </header>
+   
+    <section class="bg-black text-white py-20">
+
+        <div class="space-y-6 contenido">
+            <h2 class="text-4xl font-bold leading-tight max-w-xl">Mejora tus habilidades <br>
+                con nuestros cursos <br>
+                en linea y presencial</h1>
+            <p class="max-w-md">
+                En nuestra plataforma, encontrarás una variedad
+                de cursos de marketing diseñados para ayudarte a desarrollar tus habilidades y
+                alcanzar tus objetivos profesionales.
+            </p>
+            <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 bg-white text-black px-4 py-2 rounded-md">
+                Start with ecommerce
+            </button>
+            <div class="imagendefondo"><img src="/Imagenes/Course-Page/fondo.jpeg" alt=""></div>
+        </div>
+
+        <!--<img src="/placeholder.svg" alt="Ecommerce showcase" class="mt-10" />-->
+    </section>
+
+    <!--Segunda parte-->
+    <section class="py-20">
+        <div class="grid grid-cols-2 gap-10">
+            <div class="imgseccion2">
+                <img src="/Imagenes/Course-Page/pregunta.svg" alt="Feature 1" width="80% " height="auto" />
+            </div>
+            <div class="space-y-6">
+                <h3 class="text-3xl font-bold text-white">¿Qué cubren nuestros cursos?</h2>
+                <p class="text-white" style="font-family: cormorant-garamond-light-italic;">
+                    Nuestros cursos están diseñados para proporcionarte una experiencia integral y
+                    enriquecedora en el ámbito del curso que elijas. Aquí hay un vistazo <br>
+                    a lo que cubren nuestros programas
+                </p>
+
+                <ol class="text-white" style="font-family: cormorant-garamond-light-italic;">
+                    <li>1. Contenido exhaustivo</li>
+                    <br>
+                    <li>2. Material actualizado</li>
+                    <br>
+                    <li>3. Práctica guiada</li>
+                    <br>
+                    <li>4. Soporte personalizado</li>
+                    <br>
+                    <li>5. Recursos adicionales</li>
+                </ol>
+
+                <button
+                    class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 bg-black text-white px-4 py-2 rounded-md">
+                    Examples of ecommerce
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-100 py-20">
+        <div class="text-center space-y-6">
+            <h2 class="text-2xl font-bold producto">Instructores <br />altamente capacitados</h2>
+            
+
+            <section class="slider-container">
+                <div class="slider-images">
+                  <div class="slider-img">
+                        <img src="/images/1.png"  alt="1" />
+                    <h1>Mike</h1>
+                    <div class="details">
+                      <h2>Mike</h2>
+                      <p>web3 Developer</p>
+                    </div>
+                  </div>
+                  <div class="slider-img">
+                        <img src="/images/2.png" alt="2" />
+                    <h1>samite</h1>
+                    <div class="details">
+                      <h2>samite</h2>
+                      <p>wordpress Developer</p>
+                    </div>
+                  </div>
+                  <div class="slider-img">
+                        <img src="/images/3.png" alt="3" />
+                    <h1>hashi</h1>
+                    <div class="details">
+                      <h2>hashi</h2>
+                      <p>java Developer</p>
+                    </div>
+                  </div>
+                  <div class="slider-img active">
+                        <img src="/images/4.png" alt="4" />
+                    <h1>kaity</h1>
+                    <div class="details">
+                      <h2>kaity</h2>
+                      <p>web Developer</p>
+                    </div>
+                  </div>
+                  <div class="slider-img">
+                        <img src="/images/5.png" alt="5" />
+                    <h1>lauren</h1>
+                    <div class="details">
+                      <h2>lauren</h2>
+                      <p>php Developer</p>
+                    </div>
+                  </div>
+                  <div class="slider-img">
+                        <img src="/images/6.png" alt="6" />
+                    <h1>ryan</h1>
+                    <div class="details">
+                      <h2>ryan</h2>
+                      <p>seo Developer</p>
+                    </div>
+                  </div>
+                  <div class="slider-img">
+                        <img src="/images/7.png" alt="7" />
+                    <h1>dakes</h1>
+                    <div class="details">
+                      <h2>dakes</h2>
+                      <p>sql Developer</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <script src="/js/jQuery.js"></script>
+              <script>
+                jQuery(document).ready(function ($) {
+                  $(".slider-img").on("click", function () {
+                    $(".slider-img").removeClass("active");
+                    $(this).addClass("active");
+                  });
+                });
+              </script>
+              
+            <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 bg-black text-white px-4 py-2 rounded-md">
+                Learn more
+            </button>
+        </div>
+    </section>
+    <section class="py-20">
+        <div class="grid grid-cols-3 gap-10">
+            <div>
+                <img src="/placeholder.svg" alt="Product 1" />
+                <h3 class="text-lg font-bold mt-4">ALAMEDA</h3>
+                <p class="text-sm">Lounge Tunic</p>
+            </div>
+            <div>
+                <img src="/placeholder.svg" alt="Product 2" />
+                <h3 class="text-lg font-bold mt-4">ARTIPS</h3>
+                <p class="text-sm">Art Subscription</p>
+            </div>
+            <div class="space-y-6">
+                <h2 class="text-2xl font-bold">Manage your online store</h2>
+                <p>
+                    Our all-in-one platform gives you everything you need to run your business. Whether you’re just
+                    getting
+                    started or are an established brand, our powerful platform helps your business website grow.
+                </p>
+                <button
+                    class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 bg-black text-white px-4 py-2 rounded-md">
+                    Manage products
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-100 py-20">
+        <div class="text-center space-y-6">
+            <h2 class="text-2xl font-bold">Connected commerce tools</h2>
+            <div class="flex justify-center space-x-4">
+                <img src="/placeholder.svg" alt="Payment option 1" />
+                <img src="/placeholder.svg" alt="Payment option 2" />
+                <img src="/placeholder.svg" alt="Payment option 3" />
+                <img src="/placeholder.svg" alt="Payment option 4" />
+            </div>
+            <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 bg-black text-white px-4 py-2 rounded-md">
+                Learn more
+            </button>
+        </div>
+    </section>
+    <section class="py-20">
+        <div class="grid grid-cols-2 gap-10">
+            <div class="space-y-6">
+                <h2 class="text-2xl font-bold">Sell services</h2>
+                <p>
+                    Book appointments, sell services, and manage your business with Squarespace's powerful scheduling
+                    tools.
+                </p>
+                <button
+                    class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 bg-black text-white px-4 py-2 rounded-md">
+                    Learn more
+                </button>
+            </div>
+            <div>
+                <img src="/placeholder.svg" alt="Services" />
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-100 py-20">
+        <div class="text-center space-y-6">
+            <h2 class="text-2xl font-bold">More ways to sell</h2>
+            <div class="grid grid-cols-3 gap-10">
+                <div>
+                    <img src="/placeholder.svg" alt="Sell option 1" />
+                    <p class="text-sm mt-2">Sell subscriptions</p>
+                </div>
+                <div>
+                    <img src="/placeholder.svg" alt="Sell option 2" />
+                    <p class="text-sm mt-2">Sell digital content</p>
+                </div>
+                <div>
+                    <img src="/placeholder.svg" alt="Sell option 3" />
+                    <p class="text-sm mt-2">Sell in person</p>
+                </div>
+            </div>
+            <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 bg-black text-white px-4 py-2 rounded-md">
+                Learn more
+            </button>
+        </div>
+    </section>
+    <section class="py-20">
+        <div class="grid grid-cols-2 gap-10">
+            <div>
+                <img src="/placeholder.svg" alt="Promotion 1" />
+                <p class="text-sm mt-2">Stand out with SEO</p>
+            </div>
+            <div>
+                <img src="/placeholder.svg" alt="Promotion 2" />
+                <p class="text-sm mt-2">Drive engagement</p>
+            </div>
+            <div class="space-y-6">
+                <h2 class="text-2xl font-bold">Promote your online store</h2>
+                <p>Use our powerful social tools to tell your story, connect with your audience, and sell more products.
+                </p>
+                <button
+                    class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 bg-black text-white px-4 py-2 rounded-md">
+                    Learn more
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-100 py-20">
+        <div class="text-center space-y-6">
+            <h2 class="text-2xl font-bold">Grow your business with print on demand</h2>
+            <p class="max-w-md mx-auto">
+                Integrate with print-on-demand services to sell custom print products with no inventory or upfront
+                costs.
+            </p>
+            <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 bg-black text-white px-4 py-2 rounded-md">
+                Learn more
+            </button>
+        </div>
+    </section>
+    <section class="py-20">
+        <div class="grid grid-cols-2 gap-10">
+            <div class="space-y-6">
+                <h2 class="text-2xl font-bold">Mobile store management</h2>
+                <p>
+                    Run your business wherever you are. Whether you’re at home or on the go, you can access your website
+                    analytics and use our mobile app to manage your store.
+                </p>
+                <button
+                    class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 bg-black text-white px-4 py-2 rounded-md">
+                    Learn more
+                </button>
+            </div>
+            <div>
+                <img src="/placeholder.svg" alt="Mobile management" />
+            </div>
+        </div>
+    </section>
+    <section class="bg-black text-white py-20">
+        <div class="space-y-6">
+            <h2 class="text-2xl font-bold">How to create an ecommerce website</h2>
+            <ol class="list-decimal list-inside space-y-2">
+                <li>Pick a template and customize your brand and products.</li>
+                <li>Set up your domain with Squarespace.</li>
+                <li>Connect with your audience and grow your brand using our marketing tools.</li>
+                <li>Optimize your site for search engines with our SEO tools.</li>
+                <li>Securely process payments with our built-in payment tools.</li>
+                <li>Grow your online store with email marketing and SEO tools.</li>
+            </ol>
+            <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 bg-white text-black px-4 py-2 rounded-md">
+                Get started
+            </button>
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="grid grid-cols-4 gap-10">
+            <div>
+                <img src="/placeholder.svg" alt="Footer logo" class="h-8 mb-4" />
+                <p class="text-sm">Squarespace is the all-in-one platform to build a beautiful website.</p>
+            </div>
+            <div class="space-y-2">
+                <h3 class="font-bold">Products</h3>
+                <a href="#" class="text-sm hover:text-gray-400">
+                    Templates
+                </a>
+                <a href="#" class="text-sm hover:text-gray-400">
+                    Domains
+                </a>
+                <a href="#" class="text-sm hover:text-gray-400">
+                    Websites
+                </a>
+            </div>
+            <div class="space-y-2">
+                <h3 class="font-bold">Company</h3>
+                <a href="#" class="text-sm hover:text-gray-400">
+                    About
+                </a>
+                <a href="#" class="text-sm hover:text-gray-400">
+                    Careers
+                </a>
+                <a href="#" class="text-sm hover:text-gray-400">
+                    Press
+                </a>
+            </div>
+            <div class="space-y-2">
+                <h3 class="font-bold">Community</h3>
+                <a href="#" class="text-sm hover:text-gray-400">
+                    Blog
+                </a>
+                <a href="#" class="text-sm hover:text-gray-400">
+                    Help
+                </a>
+                <a href="#" class="text-sm hover:text-gray-400">
+                    Forum
+                </a>
+            </div>
+        </div>
+    </footer>
+</div>
